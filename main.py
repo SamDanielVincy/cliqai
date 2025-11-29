@@ -216,7 +216,7 @@ def ask_gemini_about_data(context_data, question):
     
     try:
         # Initialize the model
-        model = genai.GenerativeModel('gemini-pro')
+        model = genai.GenerativeModel('gemini-2.5-flash')
         
         # Generate response
         response = model.generate_content(prompt)
